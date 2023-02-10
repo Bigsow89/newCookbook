@@ -17,15 +17,34 @@ function App() {
       //environment: ENVIRONMENT_ID
     });
     client
-      .getEntries()
+  .getAssets()
+  .then(function (assets) {
+    assets.items.map(function (asset) {
+      var imageURL = 'https:' + asset.fields.file.url;
+    });
+  })
+  .catch(function (e) {
+    console.log(e);
+  });
+    client
+      .getEntries(/*{content_type:"Cook book-group 5" }*/)
       .then((result) => setRecipes(result.items))
       .catch((err) => console.log(err));
   }, [])
 
+
   return (
     <div className="App">
       { 
-         recipe.map (item => (<li > {item.fields.title} {item.fields.instructions}</li>) )
+         recipe.map(item =>(<div key = {item.sys.id}>
+                               <div className="title"></div>
+                              <div><h2>{item.fields.nameOfRecipe}</h2></div>
+                              {/*<img src ={item.fields.featuredImage.fields.file.url}/>*/}
+                              <div className="preparation">{item.fields.timeOfPreparation}</div>
+                              <div className="ingredients">{item.fields.ingredients}</div>
+                              <div className="instructions">{item.fields.instructions}</div>
+                            </div>))
+
       }
 
     </div>
