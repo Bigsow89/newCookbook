@@ -4,6 +4,21 @@ import { client } from "./Client";
 import Posts from "./Components/Posts/Posts";
 import Carousel from "./Components/Carousel/Carousel";
 import Loader from "./Components/Loader/Loader";
+import Cards from './Cards';
+
+
+function App() {
+  return (
+    <div className="App">
+
+     
+
+      <Carousel />
+      <Cards /> 
+
+    </div>
+  );
+
 
 class App extends React.Component {
   state = {
@@ -43,34 +58,5 @@ class App extends React.Component {
       </div>
     );
   }
-}
-// function App() {
-//     const [recipe, setRecipes] = useState([]);
-
-//     useEffect(() => {
-//       const client = contentful.createClient({
-//         space: SPACE_ID,
-//         accessToken: ACCESS_TOKEN,
-//         //environment: ENVIRONMENT_ID
-//       });
-//       client
-//         .getEntries()
-//         .then((result) => setRecipes(result.items))
-//         .catch((err) => console.log(err));
-//     }, [])
-
-//     return (
-//       <div className="App">
-//   <<<<<<< thursdaybranch
-//         {
-//            recipe.map (item => (<li > {item.fields.title} {item.fields.instructions}</li>) )
-//         }
-
-//   return (
-//     <div className="App">
-//       <Carousel />
-//     </div>
-//   );
-// }
 
 export default App;
