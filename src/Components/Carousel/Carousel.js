@@ -5,10 +5,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-// import SwiperCore, { Navigation } from "swiper";
-import Loader from "./Loader/Loader";
+import SwiperCore, { Navigation } from "swiper";
+import Loader from "../Loader/Loader";
 
-// SwiperCore.use([Navigation]);
+SwiperCore.use([Navigation]);
 
 const Carousel = () => {
   const [isCarouselLoading, setIsCarouselLoading] = useState(false);
@@ -18,6 +18,7 @@ const Carousel = () => {
     const cleanSlides = rawData.map((slide) => {
       const { sys, fields } = slide;
       const { id } = sys;
+
       const slideTitle = fields.title;
       const slideDescription = fields.slideDescription;
       const slideBg = fields.image.fields.file.url;

@@ -51,7 +51,7 @@
     font-size: 5em;
     color: white;
   }
-  .btn {
+  .btn-header {
     font-size: 1em;
     color: white;
     background-color: $primaryColor;
@@ -89,7 +89,7 @@
         }
       }
 
-      .btn {
+      .btn-header {
         transition-delay: initial !important;
       }
     }
