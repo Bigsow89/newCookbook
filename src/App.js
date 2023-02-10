@@ -4,21 +4,7 @@ import { client } from "./Client";
 import Posts from "./Components/Posts/Posts";
 import Carousel from "./Components/Carousel/Carousel";
 import Loader from "./Components/Loader/Loader";
-import Cards from './Cards';
-
-
-function App() {
-  return (
-    <div className="App">
-
-     
-
-      <Carousel />
-      <Cards /> 
-
-    </div>
-  );
-
+import Cards from "./Cards";
 
 class App extends React.Component {
   state = {
@@ -39,17 +25,15 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="App-body">
+        <Carousel />
+        <Cards />
+
         <div className="container">
           <header>
-            <div className="wrapper">
-              <span className="logo"> </span>
-            </div>
+            <div className="wrapper"></div>
           </header>
           <main>
-            <div className="App">
-              <Carousel />
-            </div>
             <div className="wrapper">
               <Posts posts={this.state.articles} />
             </div>
@@ -58,5 +42,6 @@ class App extends React.Component {
       </div>
     );
   }
+}
 
 export default App;
