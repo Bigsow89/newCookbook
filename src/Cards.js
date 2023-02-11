@@ -9,7 +9,7 @@ const Cards = () => {
         <Card.Img className='card-img' variant="top" src="https://www.freepnglogos.com/uploads/fried-chicken-png/fried-chicken-png-picture-web-icons-png-38.png" />
         <Card.Body>
           <Card.Title>Card title</Card.Title>
-          <Card.Text>
+          <Card.Text className='card-text'>
             This is a wider card with supporting text below as a natural lead-in
             to additional content. This content is a little bit longer.
           </Card.Text>
