@@ -8,8 +8,8 @@ import Cards from "./Cards";
 import { useState, useEffect } from "react";
 
 const App = () => {
-  const [articles, setArticles] = useState([])
-  
+  const [articles, setArticles] = useState([]);
+
   useEffect(() => {
     client
       .getEntries()
@@ -18,29 +18,25 @@ const App = () => {
         setArticles(response.items.filter((item) => item.fields.ingredients));
       })
       .catch(console.error);
-  },[]) 
-    
-  
+  }, []);
 
-  
-    return (
-      <div className="App-body">
-        <Carousel />
-        <Cards />
+  return (
+    <div className="App-body">
+      <Carousel />
+      <Cards />
 
-        <div className="container">
-          <header>
-            <div className="wrapper"></div>
-          </header>
-          <main>
-            <div className="wrapper">
-              <Posts posts={articles} />
-            </div>
-          </main>
-        </div>
+      <div className="container">
+        <header>
+          <div className="wrapper"></div>
+        </header>
+        <main>
+          <div className="wrapper">
+            <Posts posts={articles} />
+          </div>
+        </main>
       </div>
-    );
-  
-}
+    </div>
+  );
+};
 
 export default App;
