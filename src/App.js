@@ -5,25 +5,24 @@ import Posts from "./Components/Posts/Posts";
 import Carousel from "./Components/Carousel/Carousel";
 import Loader from "./Components/Loader/Loader";
 import Cards from "./Cards";
+import { useState, useEffect } from "react";
 
-class App extends React.Component {
-  state = {
-    articles: [],
-  };
-
-  componentDidMount() {
+const App = () => {
+  const [articles, setArticles] = useState([])
+  
+  useEffect(() => {
     client
       .getEntries()
       .then((response) => {
         console.log(response);
-        this.setState({
-          articles: response.items.filter((item) => item.fields.ingredients),
-        });
+        setArticles(response.items.filter((item) => item.fields.ingredients));
       })
       .catch(console.error);
-  }
+  },[]) 
+    
+  
 
-  render() {
+  
     return (
       <div className="App-body">
         <Carousel />
@@ -35,13 +34,13 @@ class App extends React.Component {
           </header>
           <main>
             <div className="wrapper">
-              <Posts posts={this.state.articles} />
+              <Posts posts={articles} />
             </div>
           </main>
         </div>
       </div>
     );
-  }
+  
 }
 
 export default App;
