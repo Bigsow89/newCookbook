@@ -22,11 +22,11 @@ code {
   text-align: center;
 }
 .title {
-  background-color: rgb(243, 187, 123);
+  background-color: rgb(240, 222, 202);
   padding: 20px;
 }
 body {
-  background-color: rgb(243, 187, 123);
+  background-color: rgb(240, 222, 202);
 }
 .ingredients {
   display:flex;
