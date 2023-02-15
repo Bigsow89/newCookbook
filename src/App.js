@@ -1,11 +1,12 @@
 import React from "react";
 import "./App.css";
 import { client } from "./Client";
-import Posts from "./Components/Posts/Posts";
-import Carousel from "./Components/Carousel/Carousel";
-import Loader from "./Components/Loader/Loader";
-import Cards from "./Cards";
 import { useState, useEffect } from "react";
+import { Route, NavLink, Routes } from "react-router-dom";
+import Home from "./Home";
+import AboutUs from "./AboutUs";
+import Recipes from "./Recipes";
+import Footer from "./Footer";
 
 const App = () => {
   const [articles, setArticles] = useState([]);
@@ -21,21 +22,35 @@ const App = () => {
   }, []);
 
   return (
-    <div className="App-body">
-      <Carousel />
-      <Cards />
-
-      <div className="container">
-        <header>
-          <div className="wrapper"></div>
-        </header>
-        <main>
-          <div className="wrapper">
-            <Posts posts={articles} />
-          </div>
-        </main>
+    <>
+    
+      <div className="App-body">
+        <nav>
+          <ul className="nav-link">
+            <li>
+              <NavLink exact to="/">
+                Home
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/recipes">Recipes</NavLink>
+            </li>
+            <li>
+              <NavLink to="/about-us">About Us</NavLink>
+            </li>
+          </ul>
+        </nav>
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route path="/recipes" element={<Recipes articles={articles} />}>
+          
+        </Route>
+        <Route exact path="/about-us" element={<AboutUs />} />
+        </Routes>
       </div>
-    </div>
+    
+    
+    </>
   );
 };
 
