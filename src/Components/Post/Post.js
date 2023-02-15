@@ -8,7 +8,7 @@ const Post = ({ article }) => {
     ingredients,
     instructions,
     timeOfPreparation,
-    videoTutorial,
+    
   } = article.fields;
   const postIngredients = marked(ingredients);
   const postDescription = marked(instructions);
