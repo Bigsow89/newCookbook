@@ -41,7 +41,7 @@ const App = () => {
           </ul>
         </nav>
       <Routes>
-        <Route exact path="/" element={<Home />} />
+        <Route exact path="/" element={<Home articles={articles}/>} />
         <Route path="/recipes" element={<Recipes articles={articles} />}>
           
         </Route>
