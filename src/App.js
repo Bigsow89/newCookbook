@@ -47,7 +47,7 @@ function App() {
           
           <div><h2>{item.fields.nameOfRecipe}</h2></div>
           <img src ={item.fields.featuredImage.fields.file.url} width={250} height={250} alt='food'/>
-          <div className="preparation">{item.fields.timeOfPreparation}</div>
+          <div className="preparation">Time for preparation(in mins):{item.fields.timeOfPreparation}</div>
           <div className="ingredients">{item.fields.ingredients}</div>
           <div className="instructions">{item.fields.instructions}</div>
         </div>))  
