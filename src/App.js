@@ -6,6 +6,7 @@ import { Route, NavLink, Routes } from "react-router-dom";
 import Home from "./Home";
 import AboutUs from "./AboutUs";
 import Recipes from "./Recipes";
+import Footer from "./Footer";
 
 const App = () => {
   const [articles, setArticles] = useState([]);
