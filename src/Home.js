@@ -5,7 +5,7 @@ const Home = ({ articles }) => {
   return (
     <div>
       <Carousel />
-      <Cards posts={articles}/>
+      <Cards posts={articles} />
     </div>
   );
 };
