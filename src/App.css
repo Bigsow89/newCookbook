@@ -142,10 +142,17 @@ footer {
   height: auto;
   width: 100vw;
   padding-top: 40px;
-  color: #fff;
+  color:black;
+  align-items: center;
+  justify-content: center;
 }
 
 footer h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 2.5rem 0;
 
   font-size: 2.1rem;
   font-weight: 500;
@@ -156,10 +163,12 @@ footer h3 {
 
 footer p {
   max-width: 500px;
-  margin: 10px auto;
+  margin: 20px auto;
   line-height: 28px;
   font-size: 14px;
-  color: #fff;
+  color: black;
+  align-items: center;
+  justify-content: center;
 }
 
 .socials {
@@ -177,8 +186,14 @@ footer p {
 
 .socials a {
   text-decoration: none;
-  color: #fff;
+  color: black;
   padding: 5px;
   border-radius: 50%;
+
+}
+.about{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
 }
