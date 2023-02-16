@@ -13,7 +13,8 @@ const App = () => {
 
   useEffect(() => {
     client
-      .getEntries()
+      .getEntries({ content_type: 'cookBookGroup5',
+      limit: 3,})
       .then((response) => {
         console.log(response);
         setArticles(response.items.filter((item) => item.fields.ingredients));
@@ -42,7 +43,7 @@ const App = () => {
         </nav>
       <Routes>
         <Route exact path="/" element={<Home articles={articles}/>} />
-        <Route path="/recipes" element={<Recipes articles={articles} />}>
+        <Route path="/recipes" element={<Recipes />}>
           
         </Route>
         <Route exact path="/about-us" element={<AboutUs/>} />
