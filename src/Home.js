@@ -1,11 +1,11 @@
 import Carousel from "./Components/Carousel/Carousel"
 import Cards from "./Cards"
 
-const Home = () => {
+const Home = ({ articles }) => {
   return (
     <div>
       <Carousel />
-      <Cards />
+      <Cards posts={articles}/>
     </div>
   )
 }

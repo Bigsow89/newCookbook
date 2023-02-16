@@ -1,8 +1,8 @@
-import Card from "react-bootstrap/Card";
+import CardItem from "./CardItem";
 import CardGroup from "react-bootstrap/CardGroup";
 import "./App.css";
 
-const Cards = () => {
+const Cards = ({ posts }) => {
   return (
     <CardGroup className="card-group">
       <Card className="card-customized" style={{ width: "18rem" }}>
