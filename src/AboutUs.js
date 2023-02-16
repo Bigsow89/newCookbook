@@ -19,14 +19,16 @@
 
 
 
-const AboutUs = () => {
+function AboutUS() {
   return (
     <div>
-      <h1>About Us Page</h1>
-      <p><br>This Recipe website has a collection of tasty recipes from all around the world.</br> </p>
+      <h2>About Us</h2> 
+      <p>This Recipe website has a collection of tasty recipes from all around the world.
+             Enjoy these Recipes and don't forget to give us your feedback in our social media.
+             Our Youtube channel is coming soon. </p>
       <h2>Latest Updates</h2>
       <p>Checkout our latest updates in our social media</p> 
     </div>
   );
 };
-export default AboutUs
+export default AboutUS;

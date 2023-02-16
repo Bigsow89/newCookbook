@@ -5,7 +5,7 @@ import "./App.css";
 const Cards = ({ posts }) => {
   return (
     <CardGroup className="card-group">
-      {posts.map((article,index) => (<Carditem article={article} key={index}/>))}
+      {posts.map((article,index) => (<CardItem article={article} key={index}/>))}
       </CardGroup>
   );
 };
