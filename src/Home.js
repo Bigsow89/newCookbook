@@ -1,5 +1,5 @@
-import Carousel from "./Components/Carousel/Carousel"
-import Cards from "./Cards"
+import Carousel from "./Components/Carousel/Carousel";
+import Cards from "./Cards";
 
 const Home = () => {
   return (
@@ -7,7 +7,7 @@ const Home = () => {
       <Carousel />
       <Cards />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
