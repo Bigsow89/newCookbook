@@ -21,18 +21,7 @@
   height: 150px;
   background-color: #dd5353;
 }
-.card-btn {
-  border-radius: 8px;
-  padding: 10px;
-  background-color: #dd5353;
-  font-size: 1rem;
-  color: black;
-  font-weight: 500;
-  border-style: none;
-  margin-bottom: 0.8rem;
-  cursor: pointer;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+
 .card-btn:hover {
   background-color: #b73e3e;
 }
@@ -160,6 +149,9 @@ footer p {
   line-height: 28px;
   font-size: 14px;
   color: #fff;
+}
+#footer-link {
+  min-height: 40px;
 }
 
 .socials {
