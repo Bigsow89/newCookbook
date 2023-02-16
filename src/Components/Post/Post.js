@@ -1,5 +1,4 @@
 import React from "react";
-import { marked } from "marked";
 
 const Post = ({ article }) => {
   const {
@@ -8,18 +7,11 @@ const Post = ({ article }) => {
     ingredients,
     instructions,
     timeOfPreparation,
-    
   } = article.fields;
-  const postIngredients = marked(ingredients);
-  const postDescription = marked(instructions);
 
   return (
     <div className="post">
       <h2 className="title">{nameOfRecipe}</h2>
-      <p>{timeOfPreparation}</p>
-      <section dangerouslySetInnerHTML={{ __html: postIngredients }} />
-      <section dangerouslySetInnerHTML={{ __html: postDescription }} />
-
       {featuredImage && (
         <img
           className="featuredImage"
@@ -27,6 +19,8 @@ const Post = ({ article }) => {
           alt={nameOfRecipe}
           title={nameOfRecipe}></img>
       )}
+      <p>{ingredients}</p>
+      <p>{instructions}</p>
     </div>
   );
 };
