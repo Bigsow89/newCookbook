@@ -7,6 +7,7 @@ import Home from "./Home";
 import AboutUs from "./AboutUs";
 import Recipes from "./Recipes";
 import Footer from "./Footer";
+import Logo from "./Components/Navbar/Culturekitchen-logo.png";
 
 const App = () => {
   const [articles, setArticles] = useState([]);
@@ -26,6 +27,7 @@ const App = () => {
       <div className="App-body">
         <header>
           <nav className="container-nav">
+            <img src={Logo} className="culturekitchenlogo-header"></img>
             <h2> Culture Kitchen </h2>
             <ul className="nav-link">
               <li>
