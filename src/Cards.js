@@ -12,10 +12,9 @@ const Cards = () => {
           src="https://www.freepnglogos.com/uploads/fried-chicken-png/fried-chicken-png-picture-web-icons-png-38.png"
         />
         <Card.Body>
-          <Card.Title>Card title</Card.Title>
+          <Card.Title>Tacos AL Pastor</Card.Title>
           <Card.Text>
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This content is a little bit longer.
+            A Delicious Mexican style Pork recipe
           </Card.Text>
         </Card.Body>
         <Card.Footer>
@@ -29,10 +28,9 @@ const Cards = () => {
           src="https://www.freepnglogos.com/uploads/fried-chicken-png/fried-chicken-png-picture-web-icons-png-38.png"
         />
         <Card.Body>
-          <Card.Title>Card title</Card.Title>
+          <Card.Title>Paneer Butter Masala</Card.Title>
           <Card.Text>
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This content is a little bit longer.
+            A creamy tomato curry with Indian cheese and aromatic spices
           </Card.Text>
         </Card.Body>
         <Card.Footer>
@@ -46,10 +44,9 @@ const Cards = () => {
           src="https://www.freepnglogos.com/uploads/fried-chicken-png/fried-chicken-png-picture-web-icons-png-38.png"
         />
         <Card.Body>
-          <Card.Title>Card title</Card.Title>
+          <Card.Title>Kentucky Fried Chicken</Card.Title>
           <Card.Text>
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This content is a little bit longer.
+            This most popular chicken recipe will leave you wanting more
           </Card.Text>
         </Card.Body>
         <Card.Footer>
