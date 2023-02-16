@@ -1,4 +1,4 @@
-.card-group {
+#card-group {
   text-align: center;
   display: flex;
   flex-direction: row;
@@ -8,7 +8,7 @@
   margin: 70px;
 }
 
-.card-customized {
+#card-customized {
   border: 3px solid #b73e3e;
   border-radius: 10px;
   background-color: #fff;
@@ -16,21 +16,13 @@
   font-weight: 500;
 }
 
-.card-img {
+#card-img {
   width: 100%;
   height: 150px;
   background-color: #dd5353;
 }
 
-.card-btn:hover {
-  background-color: #b73e3e;
-}
 
-.card-btn:active {
-  background-color: #b73e3e;
-  box-shadow: 0 3px #666;
-  transform: translateY(4px);
-}
 
 h1,
 h2,
@@ -188,4 +180,34 @@ footer p {
   align-items: center;
   justify-content: center;
 
+}
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #8f1515;
+  border-color: #702424 transparent #881a1a transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

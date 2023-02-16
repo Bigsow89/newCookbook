@@ -17,9 +17,9 @@ const CardItem = ({ article }) => {
       " 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
   };
   return (
-    <Card className="card-customized" style={{ width: "18rem" }}>
+    <Card id="card-customized" style={{ width: "18rem" }}>
       <Card.Img
-        className="card-img"
+        id="card-img"
         variant="top"
         src={featuredImage.fields.file.url}
       />
