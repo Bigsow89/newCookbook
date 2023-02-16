@@ -14,7 +14,7 @@ const CardItem = ({ article }) => {
       <Card.Img className="card-img" variant="top" src={featuredImage.fields.file.url} />
       <Card.Body>
         <Card.Title>{nameOfRecipe}</Card.Title>
-        <Card.Text>{instructions.slice(0, 78)}...</Card.Text>
+        <Card.Text>{instructions.slice(0, 78)}....</Card.Text>
       </Card.Body>
       <Card.Footer>
         <button className="card-btn">Get Recipe</button>
