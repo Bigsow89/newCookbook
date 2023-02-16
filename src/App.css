@@ -1,3 +1,72 @@
+body {
+  color: #000;
+  font-family: "Questrial", sans-serif;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: linear-gradient(to top, #dd5353 0%, #ffb199 60%);
+}
+.container-nav {
+  margin: 10px auto;
+  border-radius: 20px;
+  background: transparent;
+  text-align: center;
+  background-color: #dd5353;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+
+header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: large;
+}
+
+nav li {
+  display: inline-block;
+  padding-top: 15px;
+  position: relative;
+  margin: 0px 19px 12px 65px;
+}
+
+nav a {
+  color: wheat;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+nav a::before {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 0%;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
 .card-group {
   text-align: center;
   display: flex;
@@ -113,7 +182,7 @@ li {
   list-style: none;
 }
 
-nav {
+/* nav {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   border: 1px solid #a2a2a2;
@@ -124,7 +193,7 @@ nav {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-}
+} */
 footer {
   margin-top: 3rem;
   background: #eddbc0;
