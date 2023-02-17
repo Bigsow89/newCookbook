@@ -1,20 +1,35 @@
 import Posts from "./Components/Posts/Posts";
 import { useEffect, useState } from "react";
 import { client } from "./Client";
+import Footer from "./Footer";
+
 const Recipes = () => {
-  const [articles, setArticles] = useState([])
+  const [articles, setArticles] = useState([]);
+  const [loading, setLoading] = useState(true);
+
   useEffect(() => {
-    client
-      .getEntries()
-      .then((response) => {
-        console.log(response);
-        setArticles(response.items.filter((item) => item.fields.ingredients));
-      })
-      .catch(console.error);
+    setTimeout(() => {
+      client
+        .getEntries()
+        .then((response) => {
+          console.log(response);
+          setArticles(response.items.filter((item) => item.fields.ingredients));
+          setLoading(false);
+        })
+        .catch(console.error);
+    }, 1000); 
   }, []);
+
   return (
     <div className="wrapper">
-      <Posts posts={articles} />
+      {loading ? (
+        <div class="lds-dual-ring"></div>
+      ) : (
+        <>
+        <Posts posts={articles} />
+        <Footer />
+        </>
+      )}
     </div>
   );
 };

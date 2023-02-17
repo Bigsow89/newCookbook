@@ -6,11 +6,13 @@ import { Route, NavLink, Routes } from "react-router-dom";
 import Home from "./Home";
 import AboutUs from "./AboutUs";
 import Recipes from "./Recipes";
-import Footer from "./Footer";
+
 import Logo from "./Components/Navbar/Culturekitchen-logo.png";
+
 
 const App = () => {
   const [articles, setArticles] = useState([]);
+  
 
   useEffect(() => {
     client
@@ -51,7 +53,6 @@ const App = () => {
         </header>
       </div>
 
-      <Footer />
     </>
   );
 };
