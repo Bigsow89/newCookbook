@@ -26,11 +26,11 @@ const App = () => {
       <div className="App-body">
         <header>
           <nav className="container-nav">
-            <img src={Logo} className="culturekitchenlogo-header"></img>
+            <img src={Logo} alt="logo" className="culturekitchenlogo-header"></img>
             <h2> Culture Kitchen </h2>
             <ul className="nav-link">
               <li>
-                <NavLink exact to="/">
+                <NavLink to="/">
                   Home
                 </NavLink>
               </li>

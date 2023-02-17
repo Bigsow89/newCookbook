@@ -100,6 +100,15 @@ nav a:hover::before {
   min-height: 49.5px;
 }
 
+#home-header {
+  text-align: center;
+  font-size: 4rem;
+  margin-top: 1rem;
+  color: #dd5353;
+  font-style: oblique;
+}
+
+
 h1 {
   font-size: 1.9em;
 }

@@ -6,7 +6,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import SwiperCore, { Navigation } from "swiper";
-import Loader from "../Loader/Loader";
+
 
 SwiperCore.use([Navigation]);
 
@@ -53,7 +53,7 @@ const Carousel = () => {
   }, [getCarouselSlides]);
 
   if (isCarouselLoading) {
-    return <Loader />;
+    return <div className="lds-dual-ring"></div>;
   }
 
   // If there are no slides to display then do not render the component
