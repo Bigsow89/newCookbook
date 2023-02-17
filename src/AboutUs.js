@@ -2,9 +2,9 @@
 import { useEffect, useState } from "react";
 import Footer from "./Footer";
 
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+// import Container from "react-bootstrap/Container";
+// import Row from "react-bootstrap/Row";
+// import Col from "react-bootstrap/Col";
 
 // function AboutUS() {
 //   return (
@@ -29,7 +29,7 @@ function AboutUS() {
   return (
     <div>
       {loading ? (
-        <div class="lds-dual-ring"></div>
+        <div className="lds-dual-ring"></div>
       ) : (
         <>
           <h2>About Us</h2>

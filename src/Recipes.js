@@ -23,7 +23,7 @@ const Recipes = () => {
   return (
     <div className="wrapper">
       {loading ? (
-        <div class="lds-dual-ring"></div>
+        <div className="lds-dual-ring"></div>
       ) : (
         <>
         <Posts posts={articles} />
