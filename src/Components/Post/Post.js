@@ -1,4 +1,5 @@
 import React from "react";
+// import "bootstrap/dist/css/bootstrap.min.css";
 
 const Post = ({ article }) => {
   const {
@@ -17,10 +18,11 @@ const Post = ({ article }) => {
           className="featuredImage"
           src={featuredImage.fields.file.url}
           alt={nameOfRecipe}
-          title={nameOfRecipe}></img>
+          title={nameOfRecipe}
+          id="recipe-img"></img>
       )}
-      <p>{ingredients}</p>
-      <p>{instructions}</p>
+      <ul>{ingredients}</ul>
+      <ol>{instructions}</ol>
     </div>
   );
 };
