@@ -17,6 +17,7 @@ body {
   padding: 25px;
   gap: 100px;
 }
+
 .culturekitchenlogo-header {
   width: 100px;
   border-radius: 50px;
@@ -95,9 +96,10 @@ nav a:hover::before {
   height: 150px;
   background-color: #dd5353;
 }
-#p-text{
+#p-text {
   min-height: 49.5px;
 }
+
 #home-header {
   text-align: center;
   font-size: 4rem;
@@ -128,10 +130,6 @@ h6,
   padding: 8px;
 }
 
-li {
-  margin-bottom: 10px;
-}
-
 .container {
   display: flex;
   flex-direction: column;
@@ -160,12 +158,22 @@ li {
   text-transform: uppercase;
   font-size: 1.8em;
   color: #b73e3e;
+  margin: 10px;
 }
 .featuredImage {
   width: 400px;
   border-radius: 15px;
   box-shadow: 0px 10px 20px rgb(0 0 0 / 13%), 5px 2px 2px rgb(0 0 0 / 10%),
     -1px -2px 2px rgb(0 0 0 / 5%);
+}
+
+.ingredients {
+  margin: 10px;
+  padding: 18px;
+}
+
+.instructions {
+  margin: 30px;
 }
 .nav-link {
   padding: 10px 15px;
@@ -268,4 +276,3 @@ footer p {
     transform: rotate(360deg);
   }
 }
-

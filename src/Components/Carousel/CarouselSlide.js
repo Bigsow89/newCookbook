@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const CarouselSlide = (props) => {
   const { id, slideTitle, slideDescription, slideBg } = props;
@@ -7,9 +8,9 @@ const CarouselSlide = (props) => {
       <div className="textWrap">
         <h2>{slideTitle}</h2>
         <p>{slideDescription}</p>
-        <a href="/" className="btn-header">
+        <Link to="/recipes" className="btn-header">
           Go to Recipes
-        </a>
+        </Link>
       </div>
     </div>
   );
