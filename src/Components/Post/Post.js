@@ -21,8 +21,8 @@ const Post = ({ article }) => {
           title={nameOfRecipe}
           id="recipe-img"></img>
       )}
-      <ul>{ingredients}</ul>
-      <ol>{instructions}</ol>
+      <ul className="ingredients">{ingredients}</ul>
+      <ol className="instructions">{instructions}</ol>
     </div>
   );
 };
