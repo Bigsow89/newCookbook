@@ -1,5 +1,24 @@
+
 import { useEffect, useState } from "react";
 import Footer from "./Footer";
+
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+
+// function AboutUS() {
+//   return (
+//     <Container fluid>
+//       <Row>
+//         <Col>This Recipe page presents you the most delicious recipe from around the world </Col>
+//       </Row>
+//     </Container>
+//   );
+// }
+
+// export default AboutUS;
+
+
 function AboutUS() {
   const [loading, setIsLoading] = useState(true);
   useEffect(() => {
@@ -30,3 +49,4 @@ function AboutUS() {
   );
 }
 export default AboutUS;
+

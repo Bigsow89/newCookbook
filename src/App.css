@@ -1,3 +1,73 @@
+body {
+  color: #000;
+  font-family: "Questrial", sans-serif;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: linear-gradient(to top, #dd5353 0%, #ffb199 60%);
+}
+.container-nav {
+  border-radius: 20px;
+  background: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 25px;
+  gap: 100px;
+}
+.culturekitchenlogo-header {
+  width: 100px;
+  border-radius: 50px;
+}
+
+header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: large;
+}
+
+nav li {
+  display: inline-block;
+  padding-top: 15px;
+  position: relative;
+  margin: 0px 19px 12px 65px;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+nav a::before {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 0%;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
 #card-group {
   text-align: center;
   display: flex;
@@ -95,35 +165,23 @@ li {
   width: 600px;
   border-radius: 15px;
 }
-.nav-link{
+.nav-link {
   padding: 10px 15px;
-	text-transform: uppercase;
-	text-align: center;
-	display: flex;
+  text-transform: uppercase;
+  text-align: center;
+  display: flex;
   justify-content: space-evenly;
-  
+
   list-style: none;
 }
 
-nav{
-	padding-top: .5em;
-	padding-bottom: .5em;
-	border: 1px solid #a2a2a2;
-	background-color: #f4f4f4;
-	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
-	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
-	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-}
 footer {
   margin-top: 3rem;
-  background: #EDDBC0;
+  background: #eddbc0;
   height: auto;
   width: 100vw;
   padding-top: 40px;
-  color:black;
+  color: black;
   align-items: center;
   justify-content: center;
 }
@@ -139,7 +197,6 @@ footer h3 {
   font-weight: 500;
   text-transform: capitalize;
   line-height: 2rem;
-
 }
 
 footer p {
@@ -173,13 +230,11 @@ footer p {
   color: black;
   padding: 5px;
   border-radius: 50%;
-
 }
-.about{
+.about {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 .lds-dual-ring {
   display: inline-block;
@@ -211,3 +266,4 @@ footer p {
     transform: rotate(360deg);
   }
 }
+
