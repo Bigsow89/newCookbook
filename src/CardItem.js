@@ -11,7 +11,7 @@ const CardItem = ({ article }) => {
     color: "black",
     fontWeight: "500",
     border: "1px solid black",
-    marginBottom: "0.8rem",
+    // marginBottom: "0.8rem",
     cursor: "pointer",
     boxShadow:
       " 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
@@ -23,9 +23,9 @@ const CardItem = ({ article }) => {
         variant="top"
         src={featuredImage.fields.file.url}
       />
-      <Card.Body>
+      <Card.Body id="card-body">
         <Card.Title>{nameOfRecipe}</Card.Title>
-        <Card.Text>{instructions.slice(0, 78)}....</Card.Text>
+        <Card.Text id="p-text">{instructions.slice(0, 78)}....</Card.Text>
       </Card.Body>
       <Card.Footer id="footer-link">
         <Link to="/recipes" style={linkStyle}>
